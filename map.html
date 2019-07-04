@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="font/iconfont.js">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DX8Zy8hnG1At1H91Uf7DEpVGOOGEXHwc"></script>
+    <style>
+          #allmap {width: 1200px;height: 698px;margin:0 auto;font-family:"微软雅黑";position: relative;margin-bottom:33px;}
+          .swiper-container{
+              width: 1200px;height: 200px;
+                 margin: 0 auto;
+            }
+        </style>
+        
+</head>
+<body>
+           <!-- 详情页头部一级导航 -->
+ <div id="p_heard">
+    <div class="p_logo"><h1><a href="#"></a></h1></div>
+     <div class="p_container">
+       <div class="p_right">
+       <ul>
+           <li><a href="#" class="margin">联想首页</a></li>
+           <li><a href="#">商城</a></li>
+           <li><a href="#">社区</a></li>
+           <li><a href="#">服务</a></li>
+           <li><a href="#">资讯</a></li>
+           <li><a href="http://10.36.146.84/liu/zuoye/projectDemo/map.html#?tdsourcetag=s_pcqq_aiomsg">门店</a></li>
+           <li><a href="#">手机版</a></li>
+       </ul>
+     </div>
+     <div class="p_register">
+             <ul> 
+                 <li><a href="#">登录</a></li>
+                 <li><span></span></li>
+                 <li><a href="http://10.36.146.196/www19062/lianxiang/register.html">注册</a></li>
+                 <li><img src="img/phone.png" alt=""></li>
+             </ul>
+         </div>
+   </div>
+  </div>  
+  <!--详情页导航二级导航  174-->
+   <div id="nav_heard">
+    <div class="nav_logo"><h1><a href="#"></a></h1></div>
+     <div class="nav_container">
+       <div class="nav_right">
+       <ul>
+           <li><a href="#" class="margin">私人订制</a></li>
+           <li><a href="#">急速到家</a></li>
+           <li><a href="#">合伙人</a></li>
+           <li><a href="#">以旧换新</a></li>
+           <li><a href="#">企业采购</a></li>
+           <li><a href="#">兑换中心</a></li>
+           <li><a href="#">众筹</a></li>
+       </ul>
+     </div>
+     <div class="nav_register">
+             <ul> 
+                 <li class="fangdajing"><img src="img/fangdajing.png"/></li>
+                 <li><a href="#">登录</a></li>
+                 <li><span></span></li>
+                 <li><a href="http://10.36.146.196/www19062/lianxiang/register.html">注册</a></li>
+                 <li><img src="img/phone.png" alt=""></li>
+             </ul>
+         </div>
+   </div>
+  </div>  
+  <!--详情页四级导航搜索栏 -->
+   <div id="five_heard">
+    <div class="five_logo"><h1><a href="#"></a></h1></div>
+     <div class="five_container">
+     <div class="five_register">
+       <input type="text" placeholder="联想Z6 青春版" />
+       <span class="delete"><img src="img/shanchu.jpg" alt="" /></span>
+       <a href="#" class="fangdajingfive"><img src="img/fangdajing.png"/></a>
+     </div>
+   </div> 
+  </div>
+   
+  <!-- 详情页头部三级导航 60-->
+ <div id="three_heard">
+     <div class="three_container">
+       <div class="three_right">
+       <ul>
+           <li><a href="#" class="margin">私人订制</a></li>
+           <li><a href="#">急速到家</a></li>
+           <li><a href="#">合伙人</a></li>
+           <li><a href="#">以旧换新</a></li>
+           <li><a href="#">企业采购</a></li>
+           <li><a href="#">兑换中心</a></li>
+           <li><a href="#">众筹</a></li>
+       </ul>
+     </div>
+     <div class="three_register">
+            <input type="text" placeholder="联想Z6 青春版">
+             <a href="javascript:void(0)" class="fangdajingtoow"><img src="img/fangdajing.png"/></a>
+         </div>
+     </div>
+  </div>
+  <!--标签索引 36-->
+  <div class="p_label">
+      <div class="p_lg p_content">
+          <a href="#">首页</a>
+          <span>> 商品详情 ></span>
+          <span>小新 青春版 英特尔酷睿i7 14.0英寸 轻薄窄边框笔记本 追梦银</span>
+  </div>
+
+
+
+
+
+ 
+      <!-- //index -->
+        <div class="swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="img/banner1.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="img/banner2.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination">
+                    <span class="swiper-pagination-bullet"></span>
+                </div>
+        </div>
+        <div id="allmap">  </div>
+        <div class="search">
+            <input type="text" placeholder="请输入门店名称" id="sousuo" class="fl">
+            <div class="fl quxiao">
+                    <button class="ss_btn fr"><i class="iconfont">&#xe63d;</i></button>
+                    <img src="img/clear.png" alt=""  class="fl" id="alldelete">
+                   
+            </div>
+        </div>    
+        </div>
+        <div class="search_list">
+            <p class="list_diqu"><img src="img/biaoji.png" alt=""><span>深圳市</span></p>
+            <p>
+                已经为你找到<span class="j_jishu">numb</span>家门店
+            </p>
+            <p>
+               <select name="" id="search_check">
+                   <option value="选择产品类别">选择产品类别</option>
+                   <option value="商品产品及方案">商品产品及方案</option>
+                   <option value="个人&家庭产品">个人&家庭产品</option>
+                   <option value="Think产品">Think产品</option>
+               </select>
+               <select name="" id="search_check2">
+                    <option value="选择门店类型">选择门店类型</option>
+                    <option value="联想加盟店">联想加盟店</option>
+                    <option value="联想直营店">联想直营店</option>
+                    <option value="联想智生活">联想智生活</option>
+                    <option value="联想Think体验店">联想Think体验店</option>
+                </select>
+            </p>
+            <ul>
+                
+            </ul>
+        </div>
+        <div class="search_xiala">
+            <span>深圳</span><i class="iconfont">&#xe644;</i>
+        </div>
+        <div class="search_city on">
+            <p class="nowcity">当前城市: <span>深圳</span> </p>
+               <ul>
+                    <li>全国</li>
+                    <li>北京</li>
+                    <li>天津</li>
+                    <li>沈阳</li>
+                    <li>大连</li>
+                    <li>上海</li>
+                    <li>南京</li>
+                    <li>苏州</li>
+                    <li>杭州</li>
+                    <li>青岛</li>
+                    <li>郑州</li>
+                    <li>武汉</li>
+                    <li>长沙</li>
+                    <li>广州</li>
+                    <li>深圳</li>
+                    <li>重庆</li>
+                    <li>成都</li>
+                    <li>西安</li>
+                </ul>
+            <br>
+            <p>
+                <select name="" id="">
+                   <option value="">请选择</option>
+                </select>
+                <select name="" id="">
+                    <option value="">请选择</option>
+                </select>
+                <select name="" id="">
+                        <option value="">请选择</option>
+                </select>
+            </p>
+            <p>
+                <button class="btn1s">确定</button>
+                <button class="btn2s">取消</button>
+            </p>
+        </div>
+        <div class="legs">
+                <div>
+                    <img src="img/tabimg.jpg" alt="">
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <script src="swiper.min.js"></script>
+            <script src="swiper.animate1.0.3.min.js"></script>
+            <script src="jquery.js"></script>
+            <script src="js/p_js.js" type="text/javascript" charset="utf-8"></script>
+            <script type="text/javascript">
+
+                var flag = false;
+                //载入门店数据
+                ajaxList("深圳");
+                // 百度地图API功能
+                var map = new BMap.Map("allmap");    // 创建Map实例
+                map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);  // 初始化地图,设置中心点坐标和地图级别
+                //添加地图类型控件
+                map.addControl(new BMap.MapTypeControl({
+                    mapTypes:[
+                        BMAP_NORMAL_MAP,
+                        BMAP_HYBRID_MAP
+                    ]}));	  
+                map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
+                map.enableScrollWheelZoom(true); 
+                //////
+                
+                
+                    //开启鼠标滚轮缩放
+                    //轮播图
+                var mySwiper = new Swiper('.swiper-container', {
+                    pagination : '.swiper-pagination',
+                    paginationType : 'fraction',
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },//可选选项，自动滑动
+                    loop:true,
+                    
+                })
+
+                //.serch_xiala事件绑定
+                $('.search_xiala').bind('click',function(){
+                    console.log(flag);
+                    if(flag == false){
+                        $('.search_city').removeClass('on');
+                        $('.search_xiala span i').html('&#xe643;');
+                        flag = true;
+                    }else{
+                        $('.search_city').addClass('on');
+                        $('.search_xiala span i').html("&#xe644;");
+                        flag = false;
+                    }
+                })
+                //下拉菜单里的事件绑定 flag共用serch_xiala的
+                
+                $('.btn2s').bind('click',function(){
+                    console.log(flag);
+                    if(flag == false){
+                        $('.search_city').removeClass('on');
+                        $('.search_xiala span i').html('&#xe643;');
+                        flag = true;
+                    }else{
+                        $('.search_city').addClass('on');
+                        $('.search_xiala span i').html("&#xe644;");
+                        flag = false;
+                    }
+                })
+                
+                //search_city的点击事件监听
+                $('.search_city ul li').bind('click',function(e){
+                    console.log($(e.target).html(),$(this).html());
+                    $('.search_city p span').html($(this).html());
+                    $('.list_diqu span').html($(this).html());
+                    $('.search_xiala span').html($(this).html());
+                    ajaxList($(e.target).html());
+                })
+                //search_list的监听事件
+                $('.search_list ul').on('click','li',function(e){
+                    console.log($(e.target).parents().children($('.list_img')).html());
+                })
+
+
+                //alldelete ss_btn
+                $('.ss_btn').on('click',function(){
+                    alert('hello');
+                    ajaxList($('.list_diqu span').html()+$('#sousuo').val());
+                })
+
+
+                //创建搜索结果的节点函数
+                function createList(data_name,data_address,data_tel,index){
+                        $('.search_list ul').append($('<li><p class="list_img">'+(index+1)+'</p><h4>'+data_name+'</h4></li>'));
+                        $('.search_list ul li:last-child').append($('<p class="py">地址:'+data_address+'</p>'));
+                        if(data_tel == undefined){
+                            $('.search_list ul li:last-child').append($('<p class="py">电话:-</p>'));
+                        }else{
+                            $('.search_list ul li:last-child').append($('<p class="py">电话:'+data_tel+'</p>'));
+                        }
+                        $('.search_list ul li:last-child').append($('<p class="py">评分:<img src="img/pingjia.png"> </p>'));
+                }
+
+                //ajax请求封装
+                function ajaxList(indata){
+                    $.ajax({
+
+                            url: "http://api.map.baidu.com/place/v2/search?",
+                            data: {
+                            query:"专卖&联想",
+                            region:indata,
+                            tag:"电脑",
+                            city_limit:true,
+                            output:"json",
+                            ak:"DX8Zy8hnG1At1H91Uf7DEpVGOOGEXHwc"
+                            },
+                            success:function(data){
+                                console.log(data.results);
+                                if($('.search_list ul').children.length !=0){
+                                    $('.search_list ul').empty();
+                                }
+                                $('.j_jishu').html(data.results.length);
+                                for(let i =0;i<data.results.length;i++){
+                                    createList(data.results[i].name,data.results[i].address,data.results[i].telephone,i);
+                                }
+                                console.log(data.results[0].location.lng);
+                            },
+                            dataType: "jsonp"
+
+                        })
+                }
+            </script>
+</body>
+</html>
