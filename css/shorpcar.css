@@ -1,0 +1,185 @@
+*{
+   
+}
+body{ margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.top{
+    height: 38px;
+    width: 100%;
+    background:#000;
+}
+.top div{
+    height: 38px;
+    line-height: 38px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.top div ul li{
+    float: right;
+    margin-right: 15px;
+}
+.top div ul li a{
+    color: white;
+}
+.top div ul li a:hover{
+    color: orange;
+}
+.top_logo_big{
+    height: 100%;
+    width: 100%;
+}
+.top_logo{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.buycar{
+    
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.buycar table{width: 1200px}
+.buycar table tbody tr th{
+    text-align: center;
+    border-bottom: 1px solid #d9d8d6;
+    background-color: #eee;
+    height: 37px;
+}
+.loops{
+    width: 1200px;
+    margin:0 auto;
+    background: #eee;
+   
+}
+.loops p{
+    height: 41px;
+    line-height: 41px;
+}
+.swiper-container{
+    width: 1200px;
+    height: 330px;
+    background: white;
+}
+.loops div div div ul li img{
+    width: 216px;
+    height: 216px;
+}
+.loops div div div ul li{
+    float: left;
+}
+.on{
+    display: none;
+}
+.inbox{
+    height: 100%;
+    width: 1200px;
+}
+.index{
+    width: 1200px;
+    height: 244px;
+    padding:80px 0 80px 336px;
+    background: url(../img/car.png) no-repeat 224px 74px;
+}
+
+#btn{margin: 27px 0 0 10px;
+    width: 210px;
+}
+#btn a{
+    
+    margin: 0 auto;
+    width: 95px;
+    height: 30px;
+    display: inline-block;
+    line-height: 30px;
+    background:#eee;
+    text-align: center;
+    color: #000;
+    border-radius: 10%;
+    border:1px solid black;
+    text-decoration: none; 
+}
+.jiesuan{
+    width: 1200px;
+    height: 110px;
+    background: #eee;
+    padding: 14px 15px;
+    margin: 15px 15px 0px 0;
+    border: 1px solid black;
+}
+.btnjiesuan{
+    width: 1200px;
+    height: 55px;
+    padding: 10px 0 55px 55px;
+}
+.btnjiesuan a{
+    display: block;
+    width: 162px;
+    height: 40px;
+    background: #E2231A;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.jiesuan ul{
+    font-size: 18px;
+}
+.jiesuan ul li:last-child span{
+    color: red;
+    font-weight: bold;
+}
+.legs{
+    width: 100%;
+    background: #eee;
+}
+.legs div{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+#shorplist table{
+    width: 1200px;
+    margin-top:15px;
+}
+#shorplist table tbody tr{
+    height: 57px;
+    width: 1200px;
+    border:1px solid black;
+}
+#shorplist table tbody tr td {
+    text-align: center;
+    height: 57px;
+}
+#shorplist table tbody tr td label{
+    display: block;
+    width: 94px;
+    margin: 0 auto;
+
+}
+#shorplist table tbody tr td input{
+    width: 54px;
+    text-align: center;
+    height: 18px;
+    line-height: 18px;
+    float: left;
+    border: 0;
+    border-top: 1px solid #d9d8d6;
+    border-bottom: 1px solid #d9d8d6;
+    font-size: 14px;
+}
+#shorplist table tbody tr td button{
+    width: 20px;
+    height: 18px;
+    background: #eee;
+    float: left;
+    border: 1px solid #d2d2d2;
+    outline: none;
+}
+#shorplist table tbody tr td span{
+    color: blue;
+}

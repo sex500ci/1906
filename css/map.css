@@ -1,0 +1,149 @@
+
+
+
+/*-------------------------------------导航结束-------------------------------------*/
+
+.serch{
+    width: 380px;
+    height: 45px;
+    background: red;
+    z-index: 200;
+    position: absolute;
+    top: 90px;
+}
+.ss_btn{
+    height: 44px;
+    width: 20px;
+    background: white;
+    border: none;
+    position: absolute;
+    right: 0;
+    outline:none;
+}
+.quxiao{
+    height: 75px;
+    width: 45px;
+    line-height: 45px;
+   position: relative;
+}
+.quxiao img{
+    height: 15px;
+    width: 15px;
+    float: left;
+    position: absolute;
+    top: 15px;
+}
+.on{
+    display: none;
+}
+.legs{
+    width: 100%;
+    background: #eee;
+}
+.legs div{
+width: 1200px;
+margin: 0 auto;
+
+}
+#allmap{
+    border: 2px solid black;
+}
+.swiper-container{
+    margin-top:40px;
+}
+.search{
+    width: 380px;
+    height: 45px;
+    position: absolute;
+    left: 70px;
+    top: 380px;
+    background: white;
+}
+.search input{
+    width: 305px;
+    line-height: 45px;
+    border-style: none;
+    display: flex;
+    padding-left: 15px;
+}
+.search_list{
+    width: 380px;
+    height: 590px;
+    position: absolute;
+    left: 70px;
+    top: 430px;
+    background: white;
+    overflow: auto;
+}
+.search_xiala{
+    height: 45px;
+    width: 70px;
+    background: white;
+    position: absolute;
+    left: 455px;
+    top: 380px;
+    line-height: 45px;
+}
+.search_xiala span{
+    margin-left: 17px;
+}
+.search_city{
+    background: white;
+    width: 420px;
+    height: 168px;
+    position: absolute;
+    left: 455px;
+    top: 430px;
+    padding: 0 15px 31px;
+}
+.nowcity{
+    height: 30px;
+    line-height: 30px;
+}
+.search_city ul{
+    height: 20px;
+}
+.search_city ul li{
+    float: left;
+    margin-left: 7px;
+    color:blue;
+}
+.search_city p button{
+    height: 28px;
+    width: 60px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    outline:none;
+}
+.btn1s{
+    background: red;
+}
+.btn2s{
+    background: #5e5e5e;
+}
+#search_check,#search_check2{
+    width: 170px;
+    border:none;
+    outline:none;
+}
+.j_jishu{
+    color: red;
+}
+.search_list ul li{
+    padding: 12px 0 12px 32px;
+}
+.search_list ul li p{
+    font-size: 12px;
+}
+.py{
+    margin-left: 30px;
+}
+.list_img{
+    width:30px;
+    height: 19px;
+    float: left;
+    background:url("../img/biaoji2.png") no-repeat center center;
+    text-align: center;
+    color: white;
+}

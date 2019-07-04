@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/shorpcar.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="swiper.min.css">
+</head>
+<body>
+        <div class="top">
+            <div>
+                <ul>
+                    <li><a href="#"> | 返回首页</a></li>
+                    <li><a href="#">登录</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- 头部部分结束 -->
+        
+
+       <div class="top_logo_big">
+            <div class="top_logo">
+                    <a href="index.html"><img src="img/pic_logo.jpg" class="img_left fl"></a>
+                    <img src="img/pic-loadding.jpg" class="img_right fr">
+            </div>
+       </div>
+        <!-- log部分结束 -->
+        <div class="buycar">
+            <div>
+                    <table class="container">
+                            <tbody class="table-striped">
+                               <tr>
+                                <th class="col-xs-1"> <input type="checkbox" class="fl on"></th>
+                                <th class="col-xs-2">商品</th>
+                                <th class="col-xs-3">规格</th>
+                                <th class="col-xs-1">单价</th>
+                                <th class="col-xs-2">数量</th>
+                                <th class="col-xs-1">金额</th>
+                                <th class="col-xs-2">操作</th>
+                               </tr>
+                            </tbody>
+                        </table>
+            </div>
+            <div class="inbox">
+                    <div class="index on" id="index_none">
+                            <h3 class="fl">您的购物车内暂无商品,您可以</h3>
+                            <div id="btn" class="fl">
+                                <a href="#">
+                                    选购商品
+                                </a>
+                            </div>
+                    </div>
+                    <div class="list on" id="shorplist">
+                    <table class="container">
+                        <tbody class="table-striped">
+                        </tbody>
+                    </table>
+                    <div class="jiesuan">
+                        <input type="checkbox" class="fl">
+                        <span>
+                            全选
+                        </span>
+                        <a href="#">
+                            删除选中商品
+                        </a>
+                        <ul class="fr">
+                            <li>
+                                商品总价:<span>0.00</span>
+                            </li>
+                            <li>
+                                优惠节省:<span>0.00</span>
+                            </li>
+                            <li>
+                                合计:<span>0.00</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="btnjiesuan">
+                        <a href="#" class="fr">
+                            去结算
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="loops">
+            <p>
+                为您推荐 
+            </p>
+            <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" >
+                    <ul class="container">
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                    </ul>
+                </div>
+                    <div class="swiper-slide">   
+                         <ul class="container">
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                            <li class="col-xs-3">
+                                <img src="img/diannao.jpg" alt="">
+                                <p>联想服务插线板</p>
+                                <p>$45</p>
+                            </li>
+                    </ul>
+                </div>
+                    <div class="swiper-slide">slider3</div>
+                  </div>
+            </div>
+        </div>
+        <div class="legs">
+            <div>
+                <img src="img/tabimg.jpg" alt="">
+            </div>
+        </div>
+        <script src="swiper.min.js"></script>
+        <script src="jquery.js"></script>
+        <script src="swiper.animate1.0.3.min.js"></script>
+        <script>
+                //list index 判断展示空购物车还是list
+               
+                // // localStorage: goods => '{"code":["abc1","abc2","abc3"]}'
+               /*  var codeArr = ["cp2","cp3"];
+                var jstr=JSON.stringify({"spid":codeArr});
+                localStorage.setItem('index',jstr); */
+
+
+                //本地数据获取
+                var carlist = JSON.parse(localStorage.getItem('index')).spid;
+                
+               // var nums2=localStorage.getItem("addnumbers").split(",");
+                //利用localstorage保存下标函数
+
+               
+               //本地存储的数据
+
+                console.log(JSON.parse(localStorage.getItem('index')).spid);
+                console.log(typeof carlist);
+                
+                //console.log(nums2[0]);
+
+                if(JSON.parse(localStorage.getItem('index')).spid.length==0){
+                    $('.index').removeClass('on');
+                }else{
+                    $('.list').removeClass('on');
+                    $('.table-striped tr th input').removeClass('on');
+                }
+                
+                $.ajax({
+                    type:"get",
+                    url:"json/commodity.json",
+                    success:function(data){
+                        
+                        //console.log(data.tittle[0]);
+                      /*   for(let i = 0;i<parseInt(cookies.split('=')[1]);i++){
+                            createListAdd(data.img[i],data.tittle[i],data.much[i],1);
+                        } */
+
+                        $.each(data,function(index,val){
+                            //imgs,tittles,muchs,addnub,spids
+                            $.each(carlist,function(i,v){
+                                if(val.spid == v){
+                                    createListAdd(val.img,val.tittle,val.much,1,val.spid);
+                                }
+                            })
+                            
+                        })
+                    }
+                    
+                })
+                
+
+
+                $('#btn1').bind('click',function(){
+                    $('#index_none').addClass("on");
+                    $('#index_list').removeClass("on");
+                 
+                })
+
+                //轮播图
+                var mySwiper = new Swiper('.swiper-container',{
+                    pagination : '.swiper-pagination',
+                    paginationType : 'fraction',
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },//可选选项，自动滑动
+                    loop:true,
+                    
+                        watchSlidesProgress : true,
+                       
+                        })
+                        mySwiper.progress;
+                        mySwiper.slides[2].progress;
+                
+            //选中购物车内容 价格改变
+            $('#shorplist table tbody').on('change','.ck',function(){
+                var jiage =parseInt($(this).parent().next().next().next().next().next().html());
+                var yuanjia = parseInt($('.jiesuan ul li:first-child span').html());
+               if($(this).prop('checked')){
+                $('.jiesuan ul li:first-child span').html(yuanjia+jiage);
+                $('.jiesuan ul li:last-child span').html(yuanjia+jiage);
+               }else{
+                $('.jiesuan ul li:first-child span').html(parseInt($('.jiesuan ul li:first-child span').html())-jiage);
+                $('.jiesuan ul li:last-child span').html(parseInt($('.jiesuan ul li:first-child span').html()));
+               }
+                   
+                   // console.log($('.jiesuan ul li:first-child span').html());
+            })
+
+            
+
+
+
+
+
+            //购物车内删除按钮
+            $('#shorplist table tbody').on('click','span',function(e){
+
+               console.log($(this).parent().parent().attr('spid'));
+               var id =$(this).parent().parent().attr('spid');
+
+                if(parseInt($('.jiesuan ul li:first-child span').html()) !=0){
+                    $('.jiesuan ul li:first-child span').html(parseInt($('.jiesuan ul li:first-child span').html())-parseInt($(this).parent().prev().html()));
+                 $('.jiesuan ul li:last-child span').html(parseInt($('.jiesuan ul li:first-child span').html()));
+                }
+
+                $(this).parent().parent().empty();
+               /*  删除后更新本地数据 */
+                var index = carlist.indexOf(id);
+                carlist.splice(index,1);
+                
+                jstr=JSON.stringify({"spid":carlist});
+                localStorage.setItem('index',jstr);
+
+
+                if(JSON.parse(localStorage.getItem('index')).spid.length==0){
+                    $('.index').removeClass('on');
+                }else{
+                    $('.list').removeClass('on');
+                    $('.table-striped tr th input').removeClass('on');
+                }
+
+                
+            })
+
+            //购物车内+ -按钮
+            $('#shorplist table tbody').on('click','button',function(e){
+                
+                var i =$(this).siblings("input").val();
+                var jiage = parseInt($(this).parent().parent().next().html())/i;
+                if($(this).html()=="+"){
+                    i++;
+                    $(this).siblings("input").val(i);
+                    $(this).parent().parent().next().html(i*jiage);
+               }
+               if($(this).html()=="-"){
+                
+                    if(i==1){
+                        alert("请点击删除将该商品移除购物车");
+                    }
+                    else{
+                        i--;
+                        $(this).siblings("input").val(i);
+                        $(this).parent().parent().next().html(parseInt($(this).parent().parent().next().html())-jiage);
+                    }
+               }
+              })
+
+
+
+
+
+        function createListAdd(imgs,tittles,muchs,addnub,spids){
+            $('.list table tbody').append($('<tr spid='+spids+'></tr>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-1"><input type="checkbox" class="ck"></td>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-2"><img src="'+imgs+'" width=115px height=115px></td>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-3">'+tittles+'</td>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-1">'+muchs+'</td>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-2"><label><button class="jian">-</button><input type="text" value="'+addnub+'"><button class="add">+</button></label></td>'));
+            $('.list table tbody tr:last-child').append($('<td class="col-xs-1">'+(muchs*addnub)+'</td>'));
+            $('.list table tbody tr:last-child').append($(' <td class="col-xs-2"><span>删除</span><br /><span>移入收藏夹</span></td>'));
+        }
+        
+        </script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #allmap {width: 800px;height: 400px;margin:0;font-family:"微软雅黑";position: relative;}
+        .serch{
+            width: 150px;
+            height: 150px;
+            background: red;
+            z-index: 200;
+            position: absolute;
+            top: 90px;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=DX8Zy8hnG1At1H91Uf7DEpVGOOGEXHwc"></script>
+</head>
+<body>
+        <div class="big">
+            <div class="small1"></div>
+            <div class="small2  on">
+                <div class="smallin">
+
+                </div>
+            </div>
+        </div>
+        <div id="allmap">
+             
+        </div>
+        <div class="serch fr">
+                <input type="text" id="sousuo">搜索
+                <div>
+                        <ul>
+                                <li>
+                                    地址a
+                                </li>
+                            </ul>
+                </div>
+            </div>
+  
+        
+        <script src="jquery.js"></script>
+        <script type="text/javascript">
+        var nums=localStorage.getItem("index").split(",");
+        console.log(nums);
+            // 百度地图API功能
+            var map = new BMap.Map("allmap");    // 创建Map实例
+            map.centerAndZoom(new BMap.Point(114.05 , 22.55), 11);  // 初始化地图,设置中心点坐标和地图级别
+            //添加地图类型控件
+            map.addControl(new BMap.MapTypeControl({
+                mapTypes:[
+                    BMAP_NORMAL_MAP,
+                    BMAP_HYBRID_MAP
+                ]}));	  
+            map.setCurrentCity("深圳");          // 设置地图显示的城市 此项是必须设置的
+            map.enableScrollWheelZoom(true); 
+            
+                //开启鼠标滚轮缩放
+
+              
+                
+                $("#sousuo").bind('keyup',function(){
+                    $.ajax({
+
+                    url: "http://api.map.baidu.com/place/v2/search?",
+                data: {
+                    query:"ATM机",
+                    region:"北京",
+                    tag:"银行",
+                    city_limit:true,
+                    output:"json",
+                    ak:"DX8Zy8hnG1At1H91Uf7DEpVGOOGEXHwc"
+                },
+                success: function(data){
+                    console.log(data.results[0].address);
+
+                },
+                dataType: "jsonp"
+
+})
+                })
+
+        </script>
+</body>
+</html>
