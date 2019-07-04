@@ -1,0 +1,9 @@
+html, body, ul, li, ol, dl, dt, dd, p, h1, h2, h3, h4, h5, h6, th, td, form, fieldset, legend,input,textarea,select, img { margin:0; padding:0;}
+fieldset, img { border:none; }
+img{vertical-align: top;}
+ul, ol { list-style:none; } 
+i,em{font-style: normal;}
+a {color:#172c45; text-decoration:none; }
+input{outline: none;}
+.clearfix:after{content: ""; overflow: hidden; display: block;  clear: both; height:0; font-size: 1px; visibility:hidden;}
+table{border-collapse:collapse;border-spacing:0}

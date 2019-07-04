@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .bottom{
+            background-color: #272727;
+            width: 100%;
+            color: #ccc;
+            height: 352px;
+        }
+        .bottom ul{
+            width: 1200px;
+            margin: auto;
+            padding: 44px 0 27px 0px;
+            overflow: hidden;
+        }
+        .bottom ul li{
+            width: 210px;float: left;
+        }
+        .bottom ul li:nth-child(2){
+            width: 194px;
+        }
+        .bottom ul li:nth-child(4){
+            width: 130px;
+        }
+        .bottom ul li:nth-child(5){
+            width: 200px;
+        }
+        .bottom ul li:nth-child(6){
+            width: 230px;
+        }
+        .bottom ul li a{
+            display: block;
+            font-size: 13px;
+            line-height: 13px;
+            margin-bottom: 12px;
+            color: #ccc;
+        }
+        .bottom ul li a:nth-child(1),.bottom ul li h6{
+            font-size: 16px;
+            line-height: 16px;
+            margin-bottom: 18px;
+            font-weight: 600;
+        }
+        .bottom ul li:nth-child(6) ul{
+            margin: 2px 0 10px;
+            color: #ccc;
+            width: 100%;height: 48px;
+            padding: 0;
+        }
+        .bottom ul li:nth-child(6) ul li{
+            margin: 6px 7px 6px 4px;
+            float: left;
+            width: 36px;height: 36px;
+        }
+        .bottom ul li:nth-child(6) ul li a{
+            transition: all 0.3s;
+            display: block;
+            font-size: 36px;
+            line-height: 36px;
+            font-weight: normal;
+            margin: 0;
+            color: #656565;
+        }
+        .bottom ul li:nth-child(6) ul li a:hover{color: #ccc;transform:rotate(360deg);}
+        .bottom ul li:nth-child(6) .weibo{
+            width: 100%;
+            overflow: hidden;
+        }
+        .bottom ul li:nth-child(6) .weibo a{
+            margin: 0 20px 0 5px;
+            float: left;
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: normal;
+            color: #656565;
+        }
+        .bottom ul li:nth-child(6) .weibo a:hover{color: #ccc;transform:rotate(360deg);}
+        .bottom ul li:nth-child(6) .weibo a span{font-size: 14px;vertical-align: middle;}
+        .select_country {
+            margin: 60px 0 10px;
+            font-size: 16px;
+            line-height: 16px;
+            color: #ccc;
+            display: block;
+        }
+        .countries{
+            position: relative;
+            width: 186px;
+            height: 24px;
+            background: url(img/select.png);
+        }
+        .countries ol{
+            position: absolute;
+            display: none;
+            width: 184px;
+            height: 210px;
+            background: #fff;
+            color: #ccc;
+            border: 1px solid #858585;
+            bottom: 24px;
+            left: 0px;
+            overflow-y: auto;
+            overflow-x: hidden;
+            z-index: 5;
+        }
+        .bottom .countries ol li{width: 174px;height: 13px;margin: 4px;}
+        .bottom .countries ol li a{
+            text-align: left;
+            color: #000;
+            display: block;
+            width: 174px;
+            font-size: 13px;
+            line-height: 13px;
+            margin-bottom: 12px;
+            font-weight: normal;
+        }
+        .bottom .countries ol li a:hover{color: #e2231a;}
+        .countries .sel-img{width: 186px;height: 24px;}
+        .footer{border-top: 1px solid #424141;width: 100%;}
+        .bot-footer{
+            width: 1200px;
+            margin: auto;
+            font-size: 12px;
+            line-height: 46px;
+            height: 46px;
+        }
+        .fl{
+            float: left;
+        }
+        .fr{
+            float: right;
+        }
+        .fl a,.fr a{color: #ccc;}
+    </style>
+    <link rel="stylesheet" href="css/base.css">
+    <link href="font/iconfont.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div class="bottom">
+        <ul>
+            <li>
+                <a href="#">关于联想</a>
+                <a href="#">投资者机会</a>
+                <a href="#">工作机会</a>
+                <a href="#">联系我们</a>
+                <a href="#">销售网点查询</a>
+                <a href="#">服务网点查询</a>
+            </li>
+            <li>
+                <a href="#">联想商城</a>
+                <a href="#">0元试用</a>
+                <a href="#">极速到家</a>
+                <a href="#">联想合伙人</a>
+                <a href="#">私人定制</a>
+                <a href="#">以旧换新</a>
+                <a href="#">联想众筹</a>
+            </li>
+            <li>
+                <a href="#">联想服务</a>
+                <a href="#">驱动与软件下载</a>
+                <a href="#">联想知识库</a>
+                <a href="#">24小时智能客服</a>
+                <a href="#">保修配置查询</a>
+                <a href="#">服务政策查询</a>
+                <a href="#">上门快修</a>
+                <a href="#">延长保修</a>
+                <a href="#">联想IT管理服务</a>
+            </li>
+            <li>
+                <h6>联想网站群</h6>
+                <a href="#">联想创投</a>
+                <a href="#">聚享汇</a>
+                <a href="#">联想电脑管家</a>
+                <a href="#">联想超融合</a>
+                <a href="#">联想研究院</a>
+                <a href="#">智慧医疗</a>
+            </li>
+            <li>
+                <h6>&nbsp;</h6>
+                <a href="#">联想百应平台</a>
+                <a href="#">联想租赁商城</a>
+                <a href="#">联想企业网盘</a>
+                <a href="#">ThinkPad官网</a>
+                <a href="#">lecoo商城</a>
+                <a href="#">联想大数据</a>
+                <a href="#">联想商用官网</a>
+            </li>
+            <li>
+                <h6>联想官方社交平台</h6>
+                <ul>
+                    <li><a href="#" class="iconfont">&#xe625;</a></li>
+                    <li><a href="#" class="iconfont">&#xe670;</a></li>
+                    <li><a href="#" class="iconfont">&#xe6e4;</a></li>
+                </ul>
+                <div class="weibo">
+                    <a href="#" class="iconfont">&#xe831;<span> 元庆微博</span></a>
+                    <a href="#" class="iconfont">&#xe67c;</a>
+                </div>
+                <div class="select_country">选择国家或地区</div>
+                <div class="countries">
+                    <div class="sel-img"></div>
+                    <ol>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Japan</a></li>
+                        <li><a href="#">China</a></li>
+                        <li><a href="#">Australia</a></li>
+                        <li><a href="#">America</a></li>
+                        <li><a href="#">Japan</a></li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+        <div class="footer">
+            <div class="bot-footer">
+                <div class="fl">
+                    <p>
+                        版权所有：1998-2019 联想集团<span> |</span>
+                        <a href="#">法律公告</a><span> |</span>
+                        <a href="#">隐私权政策</a><span> |</span>
+                        <a href="#">产品安全</a>
+                    </p>
+                </div>
+                <div class="fr">
+                    <p>
+                        <a href="#">京ICP备11035381</a><span> |</span>
+                        京公网安备110108007970号<span> |</span>
+                        <a href="#">营业执照：110000410127232</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.8.3.js"></script>
+    <script>
+        $('.countries').mouseover(function(){
+            $('.countries ol').css({'display':'block'});
+            $('.countries').mouseout(function(){
+                $('.countries ol').css({'display':'none'});
+                $('countries ol').mouseover(function(){
+                    $('.countries ol').css({'display':'block'});
+                })
+            })
+        })
+        $('countries ol').mouseover(function(){
+            $('.countries ol').css({'display':'block'});
+        })
+    </script>
+</body>
+</html>
